@@ -9,29 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- inc_Css --> 
     <link rel="stylesheet" href="./style.css">
-    <style>
-    	body{
-    		background: #6190E8;  /* fallback for old browsers */
-			background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
-			background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    	}
-    	.todo-lists i {
-		    color: #908a8a;
-		    line-height: 25px;
-		}
-    </style>
 </head>
 <body>
 	<div class="container">
 		<div class="row justify-content-center align-items-center">
 			<div class="col-md-7 mt-5">
 				<div class="jumbotron wrap">
-					<form action="#" id="form_todo">
+					<form action="" id="form_todo" onsubmit="return false">
 					<div class="input-group" id="task_form">
 					<input type="text" class="form-control form-control-lg w-75" placeholder="Add new task.." id="taskval" autofocus="">
 					<button class="input-group-addon btn-custom" onclick="validatetask()">
           			<div class="input-group-text">
-          				<i class="fas fa-plus-circle"></i>
+          				<i class="fas fa-plus"></i>
           			</div>
 					</button>
 				</div> </form>
@@ -45,7 +34,8 @@
 			</div>
 		</div>
 	</div>
-
+</div>
+<a href="" class="text-white fixed-bottom text-right pb-3 pr-3">@mahtab</a>
 	<!-- inc script -->
 	<script src="./main.js"></script>
 </body>

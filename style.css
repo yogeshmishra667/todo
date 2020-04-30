@@ -1,51 +1,89 @@
+body {
+  background: #6190E8;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A7BFE8, #6190E8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
-
-
-.jumbotron.wrap{
+.jumbotron.wrap {
   background: #e9ecef5c
 }
 
-li.list-group-item{
-	animation: fadeInDown 1s;
-	transition: .50s;
-	animation-name: fadeInDown;
+.todo-lists i {
+  color: #f443368f;
+  line-height: 25px;
+  transition: .5s;
 }
+
+.todo-lists i:hover {
+  color: #f44336d1;
+}
+
+i.fas.fa-plus {
+  color: #f3f2f2;
+}
+
+li.list-group-item {
+  animation: fadeInDown 1s;
+  transition: .50s;
+  animation-name: fadeInDown;
+  background: #ffffff57;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
 
 /*Form-style*/
-#form_todo .form-control:focus{
-  box-shadow: none;
-  border: 1px solid #528bf3;
-  overflow: hidden;
-}
-.input-group-text {
-    background: darkseagreen;
-    border: none;
-    color: #ffffff;
-    font-size: 20px;
-}
-button.input-group-addon.btn-custom {
-    outline: none;
-    border: none;
-    background: darkseagreen;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+
+#form_todo .form-control {
+  background: transparent;
+  color: #f3f2f2;
+  border: 2px solid #6693e8;
 }
 
+#form_todo .form-control:focus {
+  box-shadow: none;
+  border: 2px solid #6693e8!important;
+  overflow: hidden;
+}
+
+#form_todo .form-control::placeholder {
+  color: #f3f2f2;
+}
+
+.input-group-text {
+  background: #6693e8;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+button.input-group-addon.btn-custom {
+  outline: none;
+  border: none;
+  background: #6693e8;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
 /*has-errors*/
-.haserror{
-  	animation: shake 1s;
-	transition: .50s;
-	animation-name: shake;
+
+.haserror {
+  animation: shake 1s;
+  transition: .50s;
+  animation-name: shake;
 }
 
 
 /*ANimations*/
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
@@ -56,17 +94,25 @@ button.input-group-addon.btn-custom {
   animation-name: fadeInDown;
 }
 
+
 /*======haserrror=====*/
+
 @keyframes shake {
-  from, to {
+  from,
+  to {
     transform: translate3d(0, 0, 0);
   }
-
-  10%, 30%, 50%, 70%, 90% {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
     transform: translate3d(-10px, 0, 0);
   }
-
-  20%, 40%, 60%, 80% {
+  20%,
+  40%,
+  60%,
+  80% {
     transform: translate3d(10px, 0, 0);
   }
 }
